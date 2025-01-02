@@ -56,6 +56,3 @@ For more information or inquiries, feel free to reach out to:
 
 - **Name**: Tholumuzi Khuboni
 - **Email**: contact@tholumuzi.co.za
-- **GitHub**: [https://github.com/tholumuzikhuboni](https://github.com/tholumuzikhuboni)
-- **LinkedIn**: [https://linkedin.com/in/tholumuzikhuboni](https://linkedin.com/in/tholumuzikhuboni)
-- **Instagram**: [https://instagram.com/tholumuzikhuboni](https://instagram.com/tholumuzikhuboni)
