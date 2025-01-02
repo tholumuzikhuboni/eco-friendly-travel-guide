@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover eco-friendly hotels and accommodations promoting sustainable travel.">
+    <meta name="keywords" content="green hotels, eco-friendly hotels, sustainable accommodations, eco-lodges">
+    <meta name="author" content="Tholumuzi Khuboni">
+    <meta name="robots" content="index, follow">
+
+    <title>Green Hotels Guide</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        body {
+            padding-top: 60px;
+        }
+
+        .navbar {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            color: #28a745;
+        }
+
+        .hero-section {
+            padding: 50px 0;
+            text-align: center;
+            background-color: #e9f7ef;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+        }
+
+        .hero-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #28a745;
+        }
+
+        .feature-item {
+            text-align: center;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-item i {
+            font-size: 3rem;
+            color: #28a745;
+            margin-bottom: 15px;
+        }
+
+        .feature-item h4 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .feature-item p {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+        
+        .map-section {
+            padding: 50px 0;
+        }
+
+        .footer {
+            padding: 30px 0;
+            text-align: center;
+            background-color: #e9f7ef;
+            color: #6c757d;
+            border-top: 1px solid #e9ecef;
+        }
+
+        .footer a {
+            color: #28a745;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-leaf" style="color: #28a745;"></i>
+                    <span style="color: #007bff;">Eco</span>
+                    <span style="color: #28a745;">Travel</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/"><i class="fas fa-home"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/green-transportation"><i class="fas fa-bus"></i> Green Transportation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/green-hotels"><i class="fas fa-hotel"></i> Green Hotels</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1>Green Hotels</h1>
+            <p>Discover sustainable accommodations that prioritize the planet while offering a comfortable stay.</p>
+        </div>
+    </section>
+
+    <!-- Benefits of Green Hotels -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Why Choose Green Hotels?</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-item">
+                    <i class="fas fa-water"></i>
+                    <h4>Water Conservation</h4>
+                    <p>Eco-friendly hotels use water-saving technologies to reduce waste.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-item">
+                    <i class="fas fa-solar-panel"></i>
+                    <h4>Energy Efficiency</h4>
+                    <p>These accommodations utilize renewable energy sources for sustainability.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-item">
+                    <i class="fas fa-recycle"></i>
+                    <h4>Waste Reduction</h4>
+                    <p>From recycling programs to minimal plastic use, green hotels lead in waste management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Interactive Map Section -->
+<section class="map-section bg-light">
+    <div class="container text-center">
+        <h2 class="mb-4"><i class="fas fa-map-marked-alt text-success"></i> Green Hotels Map</h2>
+        <p class="text-muted mb-4">Explore over 100 eco-friendly hotels worldwide.</p>
+        <div id="map" style="height: 500px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"></div>
+    </div>
+</section>
+
+<!-- Leaflet.js for Interactive Map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    const map = L.map('map').setView([20, 0], 2); // Global view centered
+
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Array of 100+ green hotels
+    const hotels = [
+        { name: 'Hotel Verde, Cape Town', coords: [-33.9648, 18.5887] },
+        { name: 'Treehouse Lodge, Peru', coords: [-4.1071, -73.5747] },
+        { name: 'Greenhost Boutique Hotel, Indonesia', coords: [-7.7972, 110.3688] },
+        { name: 'Svatma, India', coords: [10.7867, 79.1378] },
+        { name: 'Pikaia Lodge, Ecuador', coords: [-0.7436, -90.3123] },
+        { name: 'Whitepod Eco-Luxury Hotel, Switzerland', coords: [46.2074, 6.9402] },
+        { name: 'Hix Island House, Puerto Rico', coords: [18.1381, -65.4406] },
+        { name: 'Sandos Caracol Eco Resort, Mexico', coords: [20.6535, -87.0665] },
+        { name: 'Daintree Ecolodge, Australia', coords: [-16.2525, 145.3218] },
+        { name: 'The Green House, UK', coords: [50.7192, -1.8789] },
+        { name: 'Six Senses Con Dao, Vietnam', coords: [8.6766, 106.6123] },
+        { name: 'Lapa Rios Lodge, Costa Rica', coords: [8.4007, -83.2866] },
+        { name: 'Fogo Island Inn, Canada', coords: [49.6653, -54.1792] },
+        { name: 'Soneva Fushi, Maldives', coords: [5.1953, 73.0893] },
+        { name: 'Adrère Amellal, Egypt', coords: [29.2041, 25.5193] },
+        { name: 'Eagle Brae, Scotland', coords: [57.4331, -4.8496] },
+        { name: 'Playa Viva, Mexico', coords: [17.5221, -101.0301] },
+        { name: 'Jetwing Vil Uyana, Sri Lanka', coords: [7.9098, 80.6995] },
+        { name: 'Mashpi Lodge, Ecuador', coords: [0.1578, -78.8998] },
+        { name: 'Casa de Uco, Argentina', coords: [-33.6695, -69.1576] },
+        { name: 'Thala Beach Lodge, Australia', coords: [-16.5375, 145.4628] },
+        { name: 'Hotel Terra, USA', coords: [43.4799, -110.7624] },
+        { name: 'The Scarlet, UK', coords: [50.4283, -5.0271] },
+        { name: 'Chumbe Island Coral Park, Tanzania', coords: [-6.4211, 39.2696] },
+        { name: 'Belmond El Encanto, USA', coords: [34.4372, -119.7147] },
+        { name: 'Panviman Chiang Mai, Thailand', coords: [18.9242, 98.8277] },
+        { name: 'Garonga Safari Camp, South Africa', coords: [-24.1819, 30.6066] },
+        { name: 'Pench Tree Lodge, India', coords: [21.7645, 79.8915] },
+        { name: 'Longitude 131°, Australia', coords: [-25.2437, 130.9847] },
+        { name: 'AndBeyond Sossusvlei, Namibia', coords: [-24.7252, 15.8894] },
+        { name: 'Nihiwatu, Indonesia', coords: [-9.5938, 119.4285] },
+        { name: 'Camp Glenorchy, New Zealand', coords: [-44.8538, 168.3919] },
+        { name: 'Azura Benguerra Island, Mozambique', coords: [-21.8574, 35.4378] },
+        { name: 'Rara Avis, Costa Rica', coords: [10.4903, -84.0221] },
+        { name: 'Wolwedans, Namibia', coords: [-24.8268, 15.8021] },
+        { name: 'Feynan Ecolodge, Jordan', coords: [30.6684, 35.5167] },
+        { name: 'Casa na Terra, Portugal', coords: [38.5577, -7.9916] },
+        { name: 'Ion Adventure Hotel, Iceland', coords: [64.1134, -21.2860] },
+        { name: 'Kasbah du Toubkal, Morocco', coords: [31.1321, -7.9105] },
+        { name: 'Zannier Hotels Sonop, Namibia', coords: [-25.8311, 15.8207] },
+        { name: 'Cavas Wine Lodge, Argentina', coords: [-33.0321, -68.8058] },
+        { name: 'Hacienda Tres Rios, Mexico', coords: [20.7704, -86.9771] },
+        { name: 'Fundu Lagoon, Tanzania', coords: [-5.2412, 39.6805] },
+        { name: 'Gaia Riverlodge, Belize', coords: [16.9958, -88.8614] },
+        { name: 'Misool Eco Resort, Indonesia', coords: [-2.2541, 130.3505] },
+        { name: 'Amangiri, USA', coords: [37.0055, -111.5251] },
+        { name: 'Lion Sands, South Africa', coords: [-24.9954, 31.5446] },
+        { name: 'Earth Lodge, South Africa', coords: [-24.9954, 31.5446] }
+    ];
+
+    // Add markers to the map
+    hotels.forEach(hotel => {
+        L.marker(hotel.coords).addTo(map)
+            .bindPopup(`<strong>${hotel.name}</strong><br>Eco-friendly accommodation.`)
+            .openPopup();
+    });
+</script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Eco-Friendly Travel Guide. All Rights Reserved.</p>
+        <p>Follow us: 
+            <a href="https://github.com/tholumuzikhuboni">GitHub</a> | <a href="https://linkedin.com/in/tholumuzikhuboni">LinkedIn</a> | <a href="https://instagram.com/tholumuzikhuboni">Instagram</a>
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
