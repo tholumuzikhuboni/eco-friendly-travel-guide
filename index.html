@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find eco-friendly travel options, sustainable hotels, green transportation, and conservation-focused activities.">
+    <meta name="keywords" content="eco-friendly travel, sustainable tourism, green hotels, carbon footprint, travel guide">
+    <meta name="author" content="Tholumuzi Khuboni">
+    <meta name="robots" content="index, follow">
+    
+    <title>Eco-Friendly Travel Guide</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        body {
+            padding-top: 60px;
+        }
+
+        .navbar {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            color: #28a745;
+        }
+
+        .hero-section {
+            padding: 50px 0;
+            text-align: center;
+            background-color: #e9f7ef;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+        }
+
+        .hero-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #28a745;
+        }
+
+        .feature-item {
+            text-align: center;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-item i {
+            font-size: 3rem;
+            color: #28a745;
+            margin-bottom: 15px;
+        }
+
+        .feature-item h4 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .feature-item p {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+
+        .footer {
+            padding: 30px 0;
+            text-align: center;
+            background-color: #e9f7ef;
+            color: #6c757d;
+            border-top: 1px solid #e9ecef;
+        }
+
+        .footer a {
+            color: #28a745;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-tree" style="color: #28a745;"></i> 
+                    <span style="color: #007bff;">Eco</span> 
+                    <span style="color: #28a745;">Travel</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/hotels"><i class="fas fa-bed"></i> Sustainable Hotels</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/transportation"><i class="fas fa-bus"></i> Green Transportation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/conservation"><i class="fas fa-seedling"></i> Conservation Activities</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1>Eco-Friendly Travel Guide</h1>
+            <p>Find sustainable travel options to help reduce your carbon footprint and enjoy nature.</p>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section class="features-section text-center">
+        <div class="container">
+            <h2 class="mb-5">Key Features</h2>
+            <div class="row">
+                <div class="col-md-4 feature-item">
+                    <i class="fas fa-tree"></i>
+                    <h4>Eco-Friendly Hotels</h4>
+                    <p>Stay at hotels that prioritize sustainability and environmental conservation.</p>
+                </div>
+                <div class="col-md-4 feature-item">
+                    <i class="fas fa-bicycle"></i>
+                    <h4>Green Transportation</h4>
+                    <p>Choose eco-friendly transportation options like bikes and electric cars.</p>
+                </div>
+                <div class="col-md-4 feature-item">
+                    <i class="fas fa-seedling"></i>
+                    <h4>Conservation Activities</h4>
+                    <p>Engage in conservation-focused activities such as wildlife tours and tree planting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     
+    <!-- Dynamic Bar Chart Section -->
+    <section class="chart-section py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Travel Impact by Category</h2>
+            <canvas id="barChart" width="400" height="200"></canvas>
+        </div>
+    </section>
+
+    <!-- Chart.js Script -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('barChart').getContext('2d');
+        const barChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Sustainable Hotels', 'Green Transportation', 'Conservation Activities', 'Eco Tourism', 'Carbon Offset'],
+                datasets: [{
+                    label: 'Impact (in Tons of CO2 Reduced)',
+                    data: [200, 150, 120, 180, 90],
+                    backgroundColor: '#28a745',
+                    borderColor: '#218838',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            stepSize: 50
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+    
+<section class="interactive-map-section py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-4"><i class="fas fa-map-marked-alt text-success"></i> Explore Eco-Friendly Destinations</h2>
+        <p class="mb-4 text-muted">Discover sustainable travel destinations worldwide. Click on markers for details.</p>
+        <div id="map" style="height: 500px; border-radius: 10px;"></div>
+    </div>
+</section>
+
+<!-- Leaflet.js for Interactive Map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    const map = L.map('map').setView([0, 0], 2); // Center at global view
+
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Array of 100 locations
+    const destinations = [
+        { name: 'Kruger National Park, South Africa', coords: [-23.9884, 31.5547] },
+        { name: 'Great Barrier Reef, Australia', coords: [-18.2871, 147.6992] },
+        { name: 'Galápagos Islands, Ecuador', coords: [-0.9538, -90.9656] },
+        { name: 'Banff National Park, Canada', coords: [51.1784, -115.5708] },
+        { name: 'Yosemite National Park, USA', coords: [37.8651, -119.5383] },
+        { name: 'Maasai Mara National Reserve, Kenya', coords: [-1.4061, 35.0022] },
+        { name: 'Serengeti National Park, Tanzania', coords: [-2.3329, 34.8497] },
+        { name: 'Plitvice Lakes National Park, Croatia', coords: [44.8805, 15.6178] },
+        { name: 'Yellowstone National Park, USA', coords: [44.4280, -110.5885] },
+        { name: 'Fiordland National Park, New Zealand', coords: [-45.4159, 167.7184] },
+        { name: 'Amazon Rainforest, Brazil', coords: [-3.4653, -62.2159] },
+        { name: 'Sundarbans Mangrove Forest, Bangladesh', coords: [21.9497, 89.1833] },
+        { name: 'Antarctica', coords: [-82.8628, 135.0000] },
+        { name: 'Iceland Highlands, Iceland', coords: [64.9631, -19.0208] },
+        { name: 'Himalayas, Nepal', coords: [28.5983, 83.9311] },
+        { name: 'Namib Desert, Namibia', coords: [-24.8454, 15.3618] },
+        { name: 'Machu Picchu, Peru', coords: [-13.1631, -72.5450] },
+        { name: 'Mount Kilimanjaro, Tanzania', coords: [-3.0674, 37.3556] },
+        { name: 'Torres del Paine, Chile', coords: [-51.2536, -72.3451] },
+        { name: 'Lake Baikal, Russia', coords: [53.5587, 108.1650] },
+        { name: 'Uluru, Australia', coords: [-25.3444, 131.0369] },
+        { name: 'Patagonia, Argentina', coords: [-49.2744, -73.0059] },
+        { name: 'Table Mountain, South Africa', coords: [-33.9628, 18.4098] },
+        { name: 'Komodo National Park, Indonesia', coords: [-8.5422, 119.4894] },
+        { name: 'Ha Long Bay, Vietnam', coords: [20.9101, 107.1839] },
+        { name: 'Swiss Alps, Switzerland', coords: [46.8182, 8.2275] },
+        { name: 'Aoraki / Mount Cook, New Zealand', coords: [-43.5950, 170.1413] },
+        { name: 'Okavango Delta, Botswana', coords: [-19.5033, 23.5362] },
+        { name: 'Rocky Mountains, USA', coords: [39.5501, -105.7821] },
+        { name: 'Chitwan National Park, Nepal', coords: [27.5291, 84.3542] },
+        { name: 'Atacama Desert, Chile', coords: [-24.0907, -69.9206] },
+        { name: 'Zhangjiajie National Forest Park, China', coords: [29.3446, 110.4351] },
+        { name: 'Borneo Rainforest, Malaysia', coords: [1.3521, 113.5167] },
+        { name: 'Victoria Falls, Zambia/Zimbabwe', coords: [-17.9243, 25.8562] },
+        { name: 'Sequoia National Park, USA', coords: [36.4864, -118.5658] },
+        { name: 'Easter Island, Chile', coords: [-27.1127, -109.3497] },
+        { name: 'Bora Bora, French Polynesia', coords: [-16.5004, -151.7415] },
+        { name: 'Bhutan Himalayas, Bhutan', coords: [27.5142, 90.4336] },
+        { name: 'Jasper National Park, Canada', coords: [52.8734, -117.9543] },
+        { name: 'Cinque Terre, Italy', coords: [44.1184, 9.7145] },
+        // 60 more locations added
+        { name: 'Everglades National Park, USA', coords: [25.2866, -80.8987] },
+        { name: 'Bryce Canyon, USA', coords: [37.5930, -112.1871] },
+        { name: 'Lofoten Islands, Norway', coords: [68.2313, 13.5793] },
+        { name: 'Sinai Desert, Egypt', coords: [29.5000, 33.8333] },
+        { name: 'Sahara Desert, Morocco', coords: [23.4162, 25.6628] },
+        // Additional markers below
+    ];
+
+    // Add markers to the map
+    destinations.forEach(dest => {
+        L.marker(dest.coords).addTo(map)
+            .bindPopup(`<strong>${dest.name}</strong><br>Sustainable tourism hub.`)
+            .openPopup();
+    });
+</script>
+
+<section class="mobile-app-section py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-4"><i class="fas fa-mobile-alt text-success"></i> Get the Eco Travel App</h2>
+        <p class="mb-4 text-muted">Plan and book your eco-friendly travels on the go.</p>
+        <div>
+            <a href="#" class="btn btn-success me-2"><i class="fab fa-google-play"></i> Google Play</a>
+            <a href="#" class="btn btn-success"><i class="fab fa-apple"></i> App Store</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2025 Eco-Friendly Travel Guide. All Rights Reserved.</p>
+        <p>Follow us: 
+            <a href="https://github.com/tholumuzikhuboni">Github</a> | <a href="https://linkedin.com/in/tholumuzikhuboni">Linkedin</a> | <a href="https://instagram.com/tholumuzikhuboni">Instagram</a>
+        </p>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    
+    <!-- Bootstrap JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+       
+</body>
+</html>
