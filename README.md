@@ -1,5 +1,4 @@
-
-# Eco-Friendly Travel Guide
+# Eco-Friendly Guide
 
 Eco-Friendly Travel Guide is a platform designed to help travelers find sustainable and eco-friendly travel options. It provides information on green hotels, transportation, conservation activities, and eco-friendly destinations around the world. This website aims to promote sustainable tourism and reduce the carbon footprint of travelers.
 
