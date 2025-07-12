@@ -1,4 +1,4 @@
-# Eco-Friendly Travel Guide
+# Eco-Friendly Travel
 
 Welcome, to Eco-Friendly Travel Guide! This project was built by [Tholumuzi](https://portfolio.tholumuzi.co.za).
 
